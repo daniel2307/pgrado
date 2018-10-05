@@ -45,5 +45,55 @@
   <!-- The main bundle js is generated during the build process -->
   <script src="build/main.js"></script>
 
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBNz0tduikFJK1AZ-GgRlvEUezpnF2yjto",
+      authDomain: "pgrado-c9d17.firebaseapp.com",
+      databaseURL: "https://pgrado-c9d17.firebaseio.com",
+      projectId: "pgrado-c9d17",
+      storageBucket: "pgrado-c9d17.appspot.com",
+      messagingSenderId: "666766718740"
+    };
+    
+    firebase.initializeApp(config);
+    // Initialize Cloud Firestore through Firebase
+    var db = firebase.firestore();
+
+    db.collection("users").add({
+      first: "Ada",
+      last: "Lovelace",
+      born: 1815
+    })
+    .then(function(docRef) {
+        console.log("Document written with ID: ", docRef.id);
+    })
+    .catch(function(error) {
+        console.error("Error adding document: ", error);
+    });
+
+    // Add a second document with a generated ID.
+    db.collection("users").add({
+        first: "Alan",
+        middle: "Mathison",
+        last: "Turing",
+        born: 1912
+    })
+    .then(function(docRef) {
+        console.log("Document written with ID: ", docRef.id);
+    })
+    .catch(function(error) {
+        console.error("Error adding document: ", error);
+    });
+
+    db.collection("users").get().then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+          console.log(`${doc.id} => ${doc.data()}`);
+      });
+    });
+  </script>
+
 </body>
 </html>

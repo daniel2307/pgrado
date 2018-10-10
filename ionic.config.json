@@ -1,5 +1,7 @@
 {
-  "name": "pgrado",
-  "integrations": {},
+  "name": "crud",
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

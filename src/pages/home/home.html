@@ -1,7 +1,7 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Crud example
+      Crud User
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -9,15 +9,15 @@
 <ion-content padding>
 <ion-list>
     <ion-item>
-        <ion-label floating>Message title :</ion-label>
-        <ion-input type="text" value="" [(ngModel)]="model.title"></ion-input>
+        <ion-label floating>first name :</ion-label>
+        <ion-input type="text" value="" [(ngModel)]="model.firstname"></ion-input>
       </ion-item>            
       <ion-item>
-        <ion-label floating>Message body :</ion-label>
-        <ion-textarea   type="text" row="10" [(ngModel)]="model.text"></ion-textarea>
+        <ion-label floating>last name :</ion-label>
+        <ion-input type="text" value="" [(ngModel)]="model.lastname"></ion-input>
       </ion-item>
       <ion-item>
-          <button type="button" (click)="addMessage()" ion-button full >Submit</button>
+          <button type="button" (click)="addUser()" ion-button full >Submit</button>
       </ion-item>
 </ion-list>
 
@@ -27,17 +27,17 @@
     </ion-card-header>
   </ion-card>
   <ion-list>
-    <ion-item-sliding *ngFor="let message of messages">
+    <ion-item-sliding *ngFor="let user of users">
       <ion-item>
-        <h3>title: {{message.title}}</h3>
-        <p>body: {{message.text}}</p>
+        <h3>firstname: {{user.firstname}}</h3>
+        <p>lastname: {{user.lastname}}</p>
       </ion-item>
       <ion-item-options>
-        <button ion-button color="danger" (click)="deleteMessage(message.$key)">
+        <button ion-button color="danger" (click)="deleteUser(user.$key)">
         <ion-icon name="ios-trash"></ion-icon>
         delete
       </button>
-      <button ion-button color="success" (click)="updateMessage(message)">
+      <button ion-button color="success" (click)="updateUser(user)">
           <ion-icon name="ios-create"></ion-icon>
           edit
         </button>

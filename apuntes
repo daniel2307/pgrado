@@ -1,0 +1,27 @@
+
+primeros pasos con firestore
+https://firebase.google.com/docs/firestore/quickstart
+
+https://blog.ionicframework.com/building-ionic-apps-with-firestore/
+
+https://javebratt.com/crud-ionic-firestore/
+
+http://www.jomendez.com/2018/03/09/ionic-crud-application-cloud-firestore/
+
+opciones que pueden ser interesantes
+https://www.jomendez.com/ionic-boilerplate-full-app/
+
+// Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBNz0tduikFJK1AZ-GgRlvEUezpnF2yjto",
+    authDomain: "pgrado-c9d17.firebaseapp.com",
+    databaseURL: "https://pgrado-c9d17.firebaseio.com",
+    projectId: "pgrado-c9d17",
+    storageBucket: "pgrado-c9d17.appspot.com",
+    messagingSenderId: "666766718740"
+  };
+  firebase.initializeApp(config);
+
+
+  // "angularfire2": "^5.0.2",
+    // "firebase": "^4.13.1",

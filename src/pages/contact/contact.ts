@@ -1,17 +1,14 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import 'firebase/firestore';
 
 @Component({
-  selector: 'page-home',
-  templateUrl: 'home.html'
+  selector: 'page-contact',
+  templateUrl: 'contact.html'
 })
-export class HomePage {
-  
+export class ContactPage {
 
   constructor(public navCtrl: NavController) {
 
   }
-
 
 }

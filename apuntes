@@ -11,17 +11,47 @@ http://www.jomendez.com/2018/03/09/ionic-crud-application-cloud-firestore/
 opciones que pueden ser interesantes
 https://www.jomendez.com/ionic-boilerplate-full-app/
 
-// Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyBNz0tduikFJK1AZ-GgRlvEUezpnF2yjto",
-    authDomain: "pgrado-c9d17.firebaseapp.com",
-    databaseURL: "https://pgrado-c9d17.firebaseio.com",
-    projectId: "pgrado-c9d17",
-    storageBucket: "pgrado-c9d17.appspot.com",
-    messagingSenderId: "666766718740"
-  };
-  firebase.initializeApp(config);
-
-
   // "angularfire2": "^5.0.2",
     // "firebase": "^4.13.1",
+
+documentacion ionic free
+https://ionicframework.com/docs/components/
+
+tutoriales para login
+https://blog.ionicframework.com/ionic-firebase-facebook-login/
+https://medium.com/@francisco.memoli/ionic-3-firebase-native-facebook-login-c429bca3489e
+login con email and password
+https://www.youtube.com/watch?v=aNW444SpFNs
+
+como organizar la app
+https://blog.ng-classroom.com/blog/tips/ionic-generator/
+
+auth with email and password; google account and firestore
+https://medium.com/appseed-io/integrating-firebase-password-and-google-authentication-into-your-ionic-3-app-2421cee32db9
+
+video de login pasword email
+https://www.youtube.com/watch?v=aNW444SpFNs
+
+https://blog.ionicframework.com/building-ionic-apps-with-firestore/
+
+objetivos especificos
+	Identificar las necesidades de difusión de información de las empresas de transporte pesado y transportistas del mismo rubro.
+	Implementar la difusión de información y servicios de las empresas de transporte pesado.
+	Implementar la publicación de requerimiento de servicio de transporte pesado de personas naturales o jurídicas.
+	Desarrollar la notificación a conductores y empresas de transporte pesado la demanda de servicios de transporte de carga.
+	Utilizar geolocalización para notificar a los conductores de transporte de carga la demanda de servicio de carga.
+	Desarrollar reportes de servicios de transporte de carga.
+
+empresa transporte = {
+  entrar al sistema
+  registrarse
+  recibir ofertas de servicio
+}
+conductor transporte = {
+  entrar el sistema
+}
+persona cliente = {
+  entrar al sistema
+  publicar servicio de transporte de carga
+
+}
